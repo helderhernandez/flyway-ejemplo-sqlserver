@@ -9,5 +9,15 @@ Antes de poder ejecutar flyway, debera de:
 
 Recuerde agregar la cadena de conexón y las credenciales al archivo de propiedades.
 
-## Sobre las migraciones
+# Scripts SQL
 Los scripts de actualización deben de colocarse en la folder de *migrations* (se proporcionan scripts de ejemplo).
+
+# Comandos flyway
+
+```bash
+// para ver el estado actual de las migraciones
+mvn flyway:info
+
+// para realizar las migraciones
+mvn flyway:migrate
+```
