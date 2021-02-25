@@ -4,8 +4,7 @@
   <groupId>net.techbank</groupId>
   <artifactId>flyway-executor</artifactId>
   <version>1.1.0-SNAPSHOT</version>
-  <name>Flyway Executor</name>
-  
+  <name>Flyway Executor</name>  
 	
   <build>
 		<plugins>
@@ -19,14 +18,14 @@
 		</plugins>
   </build>
   
-  <dependencies>
- 
-    <dependency>
-      <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-      <version>9.4-1201-jdbc41</version>
-    </dependency>
-
-
+  <dependencies> 
+    <!-- >>> SQL SERVER >>> -->
+    <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>9.2.0.jre11</version>
+		</dependency>
+    <!-- <<< SQL SERVER <<< -->
   </dependencies>
 </project>
