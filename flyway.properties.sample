@@ -1,8 +1,11 @@
 flyway.user=<dbusername>
 flyway.password=<dbpassword>
 flyway.url=jdbc:sqlserver://<localhost>:<1433>;databaseName=<dbname>
-flyway.sqlMigrationSeparator=_
-flyway.sqlMigrationPrefix=
-flyway.locations=filesystem:<C:/migrations>
+### especificar otro directorio: 'C:/custom/directorio/scripts'
+flyway.locations=filesystem:./migrations
 ### 'baselineOnMigrate' es de gran utilidad cuando ya poseemos tablas en nuestra base de datos
 flyway.baselineOnMigrate=true
+
+### otras configuraciones personalizadas de flyway (opcional)
+#flyway.sqlMigrationSeparator=_
+#flyway.sqlMigrationPrefix=

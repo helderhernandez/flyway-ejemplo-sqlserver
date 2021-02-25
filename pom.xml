@@ -11,9 +11,10 @@
 			<plugin>
     		<groupId>org.flywaydb</groupId>
     		<artifactId>flyway-maven-plugin</artifactId>
-    		<version>3.2.1</version>
+    		<version>7.5.4</version>
     		<configuration>
-        </configuration>
+					<configFiles>flyway.properties</configFiles>
+				</configuration>
 			</plugin>
 		</plugins>
   </build>
